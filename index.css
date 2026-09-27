@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Gujarati script enhancement */
+  [lang="gu"] {
+    font-family: 'Noto Sans Gujarati', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  /* Devanagari script enhancement */
+  [lang="hi"] {
+    font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media print {
+  /* Hide non-printable UI chrome */
+  header, nav, footer, .no-print, .toast-container, button:not(.print-keep) {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  .print-area {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+}
