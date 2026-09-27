@@ -1,0 +1,6 @@
+{
+  "name": "IRISaathi",
+  "description": "Intelligent Retinal Interpretation System - Explainable AI Diabetic Retinopathy Screening for Rural Healthcare",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
